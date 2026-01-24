@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -44,9 +44,14 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
+
+  --color-color1: #b9ff66;
+  --color-color2: #191a23;
+  --color-color3: #f3f3f3;
 }
 
 :root {
+  --font-space-grotesk: 'Space Grotesk', sans-serif;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.141 0.005 285.823);
@@ -121,5 +126,39 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-space-grotesk), sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-medium leading-normal tracking-normal;
+  }
+
+  h2,
+  h3,
+  h4 {
+    @apply px-1.75 rounded-[7px];
+  }
+  h1 {
+    @apply text-[2.6875rem] sm:text-[3.75rem];
+  }
+  h2 {
+    @apply text-[2.25rem] sm:text-[2.5rem];
+  }
+  h3 {
+    @apply text-[1.625rem] sm:text-[1.875rem];
+  }
+  h4 {
+    @apply text-[1.125rem] sm:text-[1.25rem];
+  }
+  p {
+    @apply text-[1rem] sm:text-[1.125rem] leading-6 sm:leading-normal;
+  }
+}
+
+@layer utilities {
+  .font-space {
+    font-family: var(--font-space-grotesk), sans-serif;
   }
 }
