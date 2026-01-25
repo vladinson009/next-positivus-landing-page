@@ -2,6 +2,8 @@ import H2Title from '@/components/h2-title';
 import Container from '../components/container';
 import Hero from '@/components/home-page/hero';
 import Services from '@/components/home-page/services';
+import FreeProposal from '@/components/home-page/free-proposal';
+import CaseStudiesCard from '@/components/home-page/case-studies';
 
 const navbar = [
   { href: 'about-us', title: 'About us' },
@@ -21,6 +23,15 @@ export default function HomePage() {
         businesses grow and succeed online. These services include:
       </H2Title>
       <Services />
+      <FreeProposal />
+      <H2Title title="Case Studies">
+        Explore Real-Life Examples of Our Proven Digital Marketing Success through
+        Our Case Studies
+      </H2Title>
+      <CaseStudiesCard />
+      <H2Title title="Our Working Process">
+        Step-by-Step Guide to Achieving <br /> Your Business Goals
+      </H2Title>
     </Container>
   );
 }
