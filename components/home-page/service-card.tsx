@@ -45,7 +45,9 @@ export default function ServiceCard({
   const currentVariant = variants[variant];
 
   return (
-    <Card className={currentVariant.background}>
+    <Card
+      className={`${currentVariant.background} shadow-[0_5px_0px_var(--color-color2)]`}
+    >
       <CardHeader className="p-0 flex flex-row justify-between items-center">
         <CardTitle className="flex flex-col gap-23.25 max-w-55.25">
           <div className="flex flex-col items-start">
