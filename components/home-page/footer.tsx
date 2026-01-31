@@ -7,7 +7,7 @@ import { Label } from '../ui/label';
 
 export default function Footer() {
   return (
-    <section className="flex flex-col gap-12.5 bg-black rounded-tl-[45px] rounded-tr-[45px] px-15 py-13.75">
+    <section className="flex flex-col gap-12.5 bg-black rounded-t-[45px] px-15 py-13.75">
       <div className="flex justify-between items-center">
         <img className="w-45 h-7.25" src="Logo-dark.png" alt="Logo dark" />
         <nav className="flex gap-10">
