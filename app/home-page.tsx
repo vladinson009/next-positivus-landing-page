@@ -1,12 +1,14 @@
 import H2Title from '@/components/home-page/h2-title';
 import Container from '../components/container';
 import Hero from '@/components/home-page/hero';
-import Services from '@/components/home-page/services/services';
+import Services from '@/components/home-page/services-section/services';
 import FreeProposal from '@/components/home-page/free-proposal';
 import CaseStudiesCard from '@/components/home-page/case-studies';
 import WorkingProcessAcordion from '@/components/home-page/working-process-accordion';
 import TeamCardsSection from '@/components/home-page/team-cards-section';
 import TestimonialsSection from '@/components/home-page/testimonials/testimonials-section';
+import ContactUsSection from '@/components/home-page/contact-us/contact-form';
+import Footer from '@/components/home-page/footer';
 
 const navbar = [
   { href: 'about-us', title: 'About us' },
@@ -55,6 +57,8 @@ export default function HomePage() {
       <H2Title title="Contact Us">
         Connect with Us: Let&apos;s Discuss Your Digital Marketing Needs
       </H2Title>
+      <ContactUsSection />
+      <Footer />
     </Container>
   );
 }
