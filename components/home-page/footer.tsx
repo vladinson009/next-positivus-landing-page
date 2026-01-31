@@ -64,7 +64,12 @@ export default function Footer() {
         </div>
       </div>
       <div className="h-px bg-color3/50" />
-      <div></div>
+      <div className="text-background flex justify-between max-w-[50%]">
+        <p>@ 2023 Positivus. All Rights Reserved.</p>
+        <Link className="underline" href="/policy">
+          Privacy Policy
+        </Link>
+      </div>
     </section>
   );
 }
