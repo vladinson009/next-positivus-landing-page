@@ -49,7 +49,7 @@ const team = [
 export default function TeamCardsSection() {
   return (
     <section className="flex flex-col items-center md:items-end gap-10">
-      <div className="flex flex-col justify-center md:grid md:grid-cols-3 gap-10">
+      <div className="flex flex-col justify-center md:grid lg:grid-cols-2 xl:grid-cols-3 gap-10">
         {team.map((member) => (
           <Card
             key={member.name}

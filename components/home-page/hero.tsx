@@ -18,12 +18,12 @@ export default function Hero({ navbar }: Props) {
     <div className="flex flex-col items-center gap-17.5">
       <nav className="w-full flex items-center justify-between">
         <img
-          className="hidden dark:block max-w-25 md:max-w-54.5 w-full"
+          className="hidden dark:block max-w-25 md:max-w-34.5 lg:max-w-54.5 w-full"
           src="Logo-dark.png"
           alt="Logo-light"
         />
         <img
-          className="block dark:hidden max-w-25 md:max-w-54.5 w-full"
+          className="block dark:hidden max-w-25 md:max-w-34.5 lg:max-w-54.5 w-full"
           src="Logo-light.png"
           alt="Logo-light"
         />
@@ -34,7 +34,12 @@ export default function Hero({ navbar }: Props) {
             </li>
           ))}
           <li>
-            <Button variant="secondary">Request a quote</Button>
+            <Button className="hidden xl:block" size="lg" variant="secondary">
+              Request a quote
+            </Button>
+            <Button className="block xl:hidden" size="sm" variant="secondary">
+              Request a quote
+            </Button>
           </li>
         </ul>
         <div className="flex md:hidden">

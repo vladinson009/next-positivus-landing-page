@@ -13,7 +13,7 @@ export default function Container<T extends ElementType = 'div'>(
   const Component = (as ?? 'div') as ElementType;
 
   return (
-    <div className="mx-4 sm:mx-12 md:mx-25">
+    <div className="mx-4 sm:mx-12 md:mx-12 xl:mx-25">
       <Component className={cn('w-full max-w-360 mx-auto', className)} {...rest}>
         {children}
       </Component>
