@@ -8,7 +8,7 @@ import { Label } from '../ui/label';
 export default function Footer() {
   return (
     <section className="flex flex-col gap-12.5 bg-black rounded-t-[45px] px-15 py-5 md:py-13.75">
-      <div className="flex flex-col md:flex-row justify-between items-center gap-5 md:gap-0">
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-5 md:gap-0">
         <img className="w-45 h-7.25" src="Logo-dark.png" alt="Logo dark" />
         <nav className="flex justify-center flex-wrap md:flex-nowrap gap-10">
           <Link className="text-color3/75 underline" href="/about-us">
@@ -33,7 +33,7 @@ export default function Footer() {
           <Twitter className="bg-color3 text-color2 rounded-full h-7.5 w-7.5 p-1" />
         </div>
       </div>
-      <div className="flex flex-col md:flex-row gap-5 md:gap-0 justify-between">
+      <div className="flex flex-col lg:flex-row gap-5 md:gap-0 justify-between">
         {/* //! Left side / Top */}
         <div className="flex flex-col text-background gap-6.75">
           <h4 className="p-0 text-primary bg-color1 w-fit rounded-[7px] px-1">
