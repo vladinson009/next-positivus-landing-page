@@ -27,14 +27,14 @@ export default function Hero({ navbar }: Props) {
           src="Logo-light.png"
           alt="Logo-light"
         />
-        <ul className="hidden md:flex items-center gap-10 text-[20px] ml-auto">
+        <ul className="hidden md:flex items-center gap-3 xl:gap-10 text-[20px] ml-auto">
           {navbar.map((el) => (
             <li key={el.href}>
               <Link href={el.href}>{el.title}</Link>
             </li>
           ))}
           <li>
-            <Button className="hidden xl:block" size="lg" variant="secondary">
+            <Button className="hidden xl:block" size="default" variant="secondary">
               Request a quote
             </Button>
             <Button className="block xl:hidden" size="sm" variant="secondary">

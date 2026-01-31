@@ -67,7 +67,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="w-px md:w-0 md:h-px bg-color3/50" />
-      <div className="text-background flex flex-col gap-5 md:gap-0 md:flex-row justify-between max-w-[50%]">
+      <div className="text-background flex flex-col gap-5 md:gap-0 md:flex-row justify-between md:max-w-[50%] lg:max-w-[60%]">
         <p>@ 2023 Positivus. All Rights Reserved.</p>
         <Link className="underline" href="/policy">
           Privacy Policy
