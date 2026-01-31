@@ -20,7 +20,7 @@ const navbar = [
 
 export default function HomePage() {
   return (
-    <Container className="mt-15">
+    <Container className="mt-4 md:mt-15">
       {/* //! First Section */}
       <Hero navbar={navbar} />
       {/* //! Second Section */}

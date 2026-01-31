@@ -41,7 +41,7 @@ const cards: Card[] = [
 
 export default function Services() {
   return (
-    <div className="grid grid-cols-2 gap-10 mb-25">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-25">
       {cards.map((card) => (
         <ServiceCard
           key={card.firstTitle}

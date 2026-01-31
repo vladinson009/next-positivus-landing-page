@@ -24,7 +24,7 @@ export default function CaseStudiesCard() {
   return (
     <Card className="bg-color2 py-17.5 px-15">
       <CardHeader className="p-0">
-        <CardTitle className="flex gap-16">
+        <CardTitle className="flex gap-16 flex-col md:flex-row">
           {paragraphs.map((paragraph, index) => (
             <React.Fragment key={paragraph.id}>
               <div className="max-w-71.5">
@@ -37,7 +37,9 @@ export default function CaseStudiesCard() {
                   <ArrowUpRight className="p-2 rounded-full w-10 h-10" />
                 </a>
               </div>
-              {paragraphs.length - 1 !== index && <div className="w-px bg-color3" />}
+              {paragraphs.length - 1 !== index && (
+                <div className="h-px md:h-px-0 md:w-px bg-color3" />
+              )}
             </React.Fragment>
           ))}
         </CardTitle>

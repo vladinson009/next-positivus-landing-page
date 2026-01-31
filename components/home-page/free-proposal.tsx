@@ -4,8 +4,8 @@ import { Button } from '../ui/button';
 
 export default function FreeProposal() {
   return (
-    <Card className="bg-color3 border-none py-0">
-      <CardHeader className="p-0 flex flex-row justify-between items-center">
+    <Card className="bg-color3 border-none md:py-0">
+      <CardHeader className="p-0 flex flex-col md:flex-row gap-7 md:justify-between items-center">
         <CardTitle className="flex flex-col gap-6.5 max-w-125">
           <h3>Let&apos;s make things happen</h3>
           <p className="flex items-center gap-3.75">

@@ -70,7 +70,7 @@ export default function TestimonialsSection() {
       <Carousel
         setApi={setApi}
         opts={{ align: 'center', loop: true }}
-        className="flex flex-col gap-31"
+        className="flex flex-col md:gap-31"
       >
         <CarouselContent className="">
           {testimonials.map((el, idx) => (
@@ -79,8 +79,8 @@ export default function TestimonialsSection() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="flex justify-center gap-42">
-          <CarouselPrevious className="bg-transparent border-none text-color3 scale-150 border" />
+        <div className="flex justify-center items-center gap-6 gap md:gap-42">
+          <CarouselPrevious className="bg-transparent border-none text-color3 scale-150" />
           <div className="flex gap-2 text-color3">
             <Star className="text-color1" />
             <Star className="text-color1" />

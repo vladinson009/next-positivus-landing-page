@@ -54,10 +54,10 @@ export default function WorkingProcessAcordion() {
             className="data-[state=open]:bg-color1 border border-color2 px-15 py-10 rounded-[45px] shadow-[0_5px_0px_var(--color-color2)] bg-color3"
             value={item.title}
           >
-            <AccordionTrigger className="group w-full flex items-center justify-between">
+            <AccordionTrigger className="group w-full flex flex-col md:flex-row items-center gap-5 md:justify-between">
               <div className="flex items-center gap-6.25">
                 <p className="text-[60px]">0{idx + 1}</p>
-                <p className="text-[30px]">{item.title}</p>
+                <p className="text-[30px] leading-tight">{item.title}</p>
               </div>
               <Plus className="group-data-[state=open]:hidden data-[state=closed]:block h-14.5 w-14.5 bg-color3 rounded-full border border-color2 cursor-pointer" />
               <Minus className="group-data-[state=closed]:hidden data-[state=open]:block h-14.5 w-14.5 bg-color3 rounded-full border border-color2 cursor-pointer" />

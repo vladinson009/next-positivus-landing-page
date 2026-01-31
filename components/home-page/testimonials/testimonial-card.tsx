@@ -19,20 +19,23 @@ export default function TestimonialCard({
       className="
     border-none
     bg-transparent
-    max-w-[606px]
+    max-w-151.5
     mx-auto
+    
     "
     >
       <CardContent
         className="
             bg-color1 text-color2
-              mask-[url('/Bubble.svg')]
-              mask-no-repeat
-              mask-contain
-              mask-center
+             md:mask-[url('/Bubble.svg')]
+             md:mask-no-repeat
+             md:md:mask-contain
+             md:mask-center
+             mask-cover
               py-13 px-12
               [-webkit-mask-image:url('/Bubble.svg')]
               pb-18
+              
               "
       >
         &quot;{quote}&quot;

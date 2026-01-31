@@ -8,8 +8,8 @@ import { Textarea } from '@/components/ui/textarea';
 
 export default function ContactUsSection() {
   return (
-    <section className="relative flex justify-between bg-color3 pl-25 py-15 rounded-[45px] items-center overflow-hidden mb-35">
-      {/* //! Left side */}
+    <section className="relative flex flex-col md:flex-row justify-between bg-color3 md:pl-25 py-15 rounded-[45px] items-center overflow-hidden mb-35">
+      {/* //! Left side / Top side */}
       <form className="flex flex-1 flex-col gap-10 max-w-139 " action="">
         <RadioGroup className="flex" defaultValue="option-one">
           <div className="flex items-center gap-3">
@@ -60,8 +60,8 @@ export default function ContactUsSection() {
         </div>
         <Button>Send Message</Button>
       </form>
-      {/* //! Right side */}
-      <div className="absolute right-0 translate-x-80">
+      {/* //! Right side / Bottom side */}
+      <div className="md:absolute md:right-0 md:translate-x-80">
         <img className="scale-90 " src="ContactUs.png" alt="Contact Us image" />
       </div>
     </section>
