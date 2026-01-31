@@ -14,15 +14,19 @@ export default function ContactUsSection() {
         <RadioGroup className="flex" defaultValue="option-one">
           <div className="flex items-center gap-3">
             <RadioGroupItem
-              className="text-color1"
+              className="text-color1 border border-color2"
               value="option-one"
               id="option-one"
             />
-            <Label htmlFor="option-one">Option One</Label>
+            <Label htmlFor="option-one">Say Hi</Label>
           </div>
           <div className="flex items-center gap-3">
-            <RadioGroupItem value="option-two" id="option-two" />
-            <Label htmlFor="option-two">Option Two</Label>
+            <RadioGroupItem
+              className="text-color1 border border-color2"
+              value="option-two"
+              id="option-two"
+            />
+            <Label htmlFor="option-two">Get a Quote</Label>
           </div>
         </RadioGroup>
         <div className="flex flex-col gap-6.25">
